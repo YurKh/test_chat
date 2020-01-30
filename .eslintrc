@@ -1,0 +1,29 @@
+{
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "rules": {
+    "no-set-state": "off",
+    "react/prop-types": 0,
+    "react/display-name": 0,
+    "no-console": "off",
+    "react-hooks/rules-of-hooks": "error",
+    "no-restricted-syntax": [
+      "warn",
+      {
+        "selector": "CallExpression[callee.object.name='console'][callee.property.name!=/^(warn|error|info|trace)$/]",
+        "message": "Remove your console.log, mister!"
+      }
+    ]
+  },
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "plugins": ["react", "react-hooks"],
+  "extends": ["eslint:recommended", "plugin:react/recommended", "react-app"]
+}

@@ -1,0 +1,28 @@
+.chatInputWrapper {
+  position: relative;
+
+  width: 100%;
+  min-height: 50px;
+  max-height: 400px;
+  overflow-x: hidden;
+
+  background-color: #182330;
+
+  padding: 15px 45px 15px 10px;
+
+  color: #5a6673;
+}
+
+.iconsWrapper {
+  position: fixed;
+
+  bottom: 0;
+  right: 0;
+
+  padding: 10px;
+}
+
+.icon {
+  width: 30px;
+  fill: #5a6673;
+}
